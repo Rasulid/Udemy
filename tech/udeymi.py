@@ -163,7 +163,7 @@ print(whos_first("   Bang!        ",
                  "        Bang!   "))"""
 
 # summ__________________________________________________________________
-"""
+"""  
 def solve_hanoi_tower(discks):
     return 2**discks - 1
 
@@ -187,7 +187,7 @@ print(any_duplicates([[1, 2, 3], [3, 4, 5], [9, 8, 7]]))"""
 
 #sticks game__________________________________________________________________
 
-
+"""
 number_of_sticks = 10
 player_turn = 1
 
@@ -235,4 +235,40 @@ while (not end_of_game(number_of_sticks)):
         print(f'No more sticks in the game. \nPlayer {player_turn} has lost!')
         break
     
-    player_turn = switch_player_turn(player_turn)
+    player_turn = switch_player_turn(player_turn)"""
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
