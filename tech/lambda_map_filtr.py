@@ -1,5 +1,5 @@
 #map__________________________________________________________________
-"""def siq(numbers):
+def siq(numbers):
     return numbers * numbers
 
 numbers = [1,2,3,4,4,5,6,6]
@@ -22,11 +22,11 @@ print('\n')
 coo=coordinate(['x','y','z'] , [1,2,3])
 print(coo)
 
-print('\n')"""
+print('\n')
 
 
 #filter__________________________________________________________________
-"""def is_adult(age):
+def is_adult(age):
     return age>=18
 
 age = [14,18,16,21,15,30]
@@ -63,10 +63,10 @@ new_list = list(map(lambda x:x*2 , my_list))
 print(new_list)
 print('x = ',x)
 
-print('\n')"""
+print('\n')
 
 #Decorator__________________________________________________________________
-"""
+
 def log_decorator(func):
     def wrap():
         print(f'calling func {func}')
@@ -110,10 +110,10 @@ def factor(num):
 
 print(factor(100))
 
-print('\n')"""
+print('\n')
 
 #decorator @wraps__________________________________________________________________
-"""
+
 def log_decoretion(func):
     def wrap():
         print(f"Calling functon {func}")
@@ -143,15 +143,15 @@ def hello():
     print("Hello world")
 
 print(hello())
-print(help(hello))"""
+print(help(hello))
 
 from this import d
 
 #whos is first__________________________________________________________________
-"""
+
 def whos_first(p1, p2):
     # ваше решение
-   diss = p1.find('B') -  p2.find('B')
+    diss = p1.find('B') -  p2.find('B')
     if diss < 0:
         return 'p1'
     elif diss > 0:
@@ -160,10 +160,10 @@ def whos_first(p1, p2):
         return 'tie'
 
 print(whos_first("   Bang!        ",
-                 "        Bang!   "))"""
+                 "        Bang!   "))
 
 # summ__________________________________________________________________
-"""  
+  
 def solve_hanoi_tower(discks):
     return 2**discks - 1
 
@@ -173,21 +173,21 @@ print(solve_hanoi_tower(5))
 def summa(lst):
     return sum([ a+b for a,b in lst]) if not any([a==b for a,b in lst]) else 0
 
-print(summa([(1, 2), (3, 4), (5, 6)]))"""
+print(summa([(1, 2), (3, 4), (5, 6)]))
 
 #any dublicates__________________________________________________________________
 
-"""
+
 def any_duplicates(squere):
     sor = [ i for x in squere for i in x]
     return sorted(sor) != [1,2,3,4,5,6,7,8,9]
 
-print(any_duplicates([[1, 2, 3], [3, 4, 5], [9, 8, 7]]))"""
+print(any_duplicates([[1, 2, 3], [3, 4, 5], [9, 8, 7]]))
 
 
 #sticks game__________________________________________________________________
 
-"""
+
 number_of_sticks = 10
 player_turn = 1
 
@@ -235,40 +235,5 @@ while (not end_of_game(number_of_sticks)):
         print(f'No more sticks in the game. \nPlayer {player_turn} has lost!')
         break
     
-    player_turn = switch_player_turn(player_turn)"""
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
- 
-
-
- 
-
-
-
-
-
-
+    player_turn = switch_player_turn(player_turn)
 
