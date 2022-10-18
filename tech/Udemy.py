@@ -68,33 +68,38 @@
 #         print(f"Sorry, but you didn't make it. My number was: {number}")
 #         break
 
-import random
-continue_s = True
+# import random
+# continue_s = True
 
-while continue_s:
-    pleyer_shoose = input('r - камень ,  c -  ножницы ,  p -  бумага = ').lower()
+# while continue_s:
+#     pleyer_shoose = input('r - камень ,  c -  ножницы ,  p -  бумага = ').lower()
 
 
-    if pleyer_shoose not in ['r' , 'c' , 'p']:
-        print('Eror')
-        continue
-    generator = {1:'r',
-                 2:'c',
-                 3:'p'}
-    comp_choose = generator[random.randint(1,3)]
-    # comp_choose = random.choice(['r','s','p'])
+#     if pleyer_shoose not in ['r' , 'c' , 'p']:
+#         print('Eror')
+#         continue
+#     generator = {1:'r',
+#                  2:'c',
+#                  3:'p'}
+#     comp_choose = generator[random.randint(1,3)]
+#     # comp_choose = random.choice(['r','s','p'])
 
-    print(f"Comp choes =  {comp_choose}")
+#     print(f"Comp choes =  {comp_choose}")
 
-    win_c = [('p' , 'r'),('r' , 'c'),('c','p')]
+#     win_c = [('p' , 'r'),('r' , 'c'),('c','p')]
 
-    if comp_choose == pleyer_shoose:
-        print('нечья')
+#     if comp_choose == pleyer_shoose:
+#         print('нечья')
 
-    elif (pleyer_shoose , comp_choose) in win_c:
-        print('Человек победил!')
+#     elif (pleyer_shoose , comp_choose) in win_c:
+#         print('Человек победил!')
     
-    else:
-        print('Компютер победил!')
+#     else:
+#         print('Компютер победил!')
     
-    continue_s = input('Хотите продолжить ? [y/n] = ').lower() == 'y'
+#     continue_s = input('Хотите продолжить ? [y/n] = ').lower() == 'y'
+
+
+
+
+
