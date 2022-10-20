@@ -3,19 +3,21 @@ from shelve import Shelf
 
 class Shape :
     def __init__(self):
-        print('Shepe created')
-
+        print('Shape is work')
     def draw(self):
-        print('Drawing a shepe')
+        # raise NotImplementedError ("Can't instantiant an abstract class")
+        print('Shape is draw')
 
     def area(self):
-        print('Calc area')
+        # raise NotImplementedError ("Can't instantiant an abstract class")
+        print('Shape is area')
 
     def perimetr(self):
-        print('Calc perimetr')
+        # raise NotImplementedError ("Can't instantiant an abstract class")
+        print('Shape is perimetr')
 
-shape = Shape()
-print(shape)
+# shape = Shape()
+# print(shape)
 
 
 class Rectangle(Shape):
@@ -53,7 +55,23 @@ class Triangle (Shape):
 
     def draw(self):
         print(f'Drawing triangle whith sides ={self.a} , {self.b} , {self.c}')
-        return super().draw()
+        
+
+    def area(self):
+        s = (self.a + self.b + self.c) / 2
+        return math.sqrt(s*(s - self.a)*(s - self.b)*(s - self.c))
+
+    def perimetr(self):
+        return self.a + self.b + self.c
+
+triangle = Triangle(10 ,10 ,10)
+print(triangle.perimetr())
+
+# Если 2 класса имеют одинаковые методи и названия - мы используем 
+"""полимарфизм"""
+for shape in [rect , triangle]:
+    shape.draw()
+
 
             
 
