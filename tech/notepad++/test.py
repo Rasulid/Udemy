@@ -1,32 +1,27 @@
 import unittest
-import Unit_test
+from Unit_test import get_reply
 
-class FizzBazzTest(unittest.TestCase):
+class FizzBuzzTests(unittest.TestCase):
 
-    def test_fizz(self):
-        number =6
-        
-        result = Unit_test.get_reply(number)
-        
-        self.assertEqual(result,"Fizz")
-        
-    def  test_buzz(self):
-    
-        number = 10
-        
-        result = Unit_test.get_reply(number)
-        
-        self.assertEqual(result , "Buzz")
-        
-        
-    def test_fizzbuzz(self):
-        
-        number = 15
-        
-        result = Unit_test.get_reply(number)
-
-        self.assertEqual(result , "FizzBazz")
-        
-        
+	def test_fizz(self):
+		number=6
+		
+		result = get_reply(number)
+		
+		self.assertEqual(result, 'Fizz')
+		
+	def test_buzz(self):
+		number=10
+		
+		result = get_reply(number)
+		
+		self.assertEqual(result, 'Buzz')
+		
+	def test_fizzbuzz(self):
+		number=15
+		result = get_reply(number)
+		
+		self.assertEqual(result, 'FizzBuzz')
+		
 if __name__ == '__main__':
-    unittest.main()
+	unittest.main()

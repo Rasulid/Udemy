@@ -103,3 +103,7 @@
 
 
 
+from Konstant import Charecter
+
+s= Charecter(90)
+print(s)
