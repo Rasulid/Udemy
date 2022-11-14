@@ -52,3 +52,5 @@ i_older = my_birth_day < jovo_bithday
 print(i_older)
 
 #https://all-python.ru/osnovy/modul-datetime.html#datetime
+def now():
+    return None
