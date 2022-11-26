@@ -137,6 +137,11 @@ venv
 .spyderproject
 .spyproject
 
+# Default ignored files
+/shelf/
+/workspace.xml
+
+
 # Rope project settings
 .ropeproject
 
